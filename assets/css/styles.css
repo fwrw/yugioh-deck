@@ -1,0 +1,88 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F7FFF7;
+}
+
+.content {
+  padding: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .content {
+    max-width: 992px;
+    margin: 1rem auto;
+  }
+}
+
+ol#cards {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (min-width: 992px) {
+  ol#cards {
+     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+ol#cards li {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 1rem;
+  background-color: #292F36;
+  color: #F7FFF7;
+  
+  border-radius: 0.4rem;
+}
+
+ol#cards li img {
+    max-width: 100%;
+    width: 80px;
+    align-self: flex-end;
+}
+
+ol#cards li span {
+  padding: 0.5rem;
+  margin-bottom: 0.3rem;
+  background-color: #424c55;
+  border-radius: 0.6rem;
+
+  width: fit-content;
+}
+
+ol#cards li img {
+  border-radius: 10px;
+  border: solid;
+}
+
+.level-undefined {
+  border-color: #b5b5b5;
+}
+
+.btn-control {
+  border-radius: 5px;
+  padding: 0.5em;
+  height: 2.5em;
+  border: none;
+  outline: none;
+  
+  margin-left: 0.5em;
+}
+
+#btn-gen {
+  background-color: #292F36;
+  color: white;
+}
+
+#btn-clear {
+  background-color: #EF233C;
+  color: black;
+}
